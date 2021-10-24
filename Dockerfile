@@ -1,7 +1,7 @@
 FROM debian:stable-slim 
 
 # install python
-RUN apt-get update -y && install build-essential libssl-dev libffi-dev python3-dev -y
+RUN apt-get update -y && apt-get install build-essential libssl-dev libffi-dev python3-dev -y
 
 # install awscli
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
