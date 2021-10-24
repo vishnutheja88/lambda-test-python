@@ -39,4 +39,4 @@ RUN apt-get update -y
 RUN curl -O "https://releases.hashicorp.com/terraform/1.0.9/terraform_1.0.9_linux_amd64.zip"
 RUN unzip terraform_1.0.9_linux_amd64.zip
 RUN chmod +x terraform
-RUN RUN mv terraform /usr/local/bin/
+RUN mv terraform /usr/local/bin/
