@@ -35,3 +35,7 @@ RUN mv /tmp/eksctl /usr/local/bin
 
 
 #terraform
+RUN apt-get update -y
+RUN curl -O "https://releases.hashicorp.com/terraform/1.0.9/terraform_1.0.9_linux_amd64.zip"
+RUN unzip terraform_1.0.9_linux_amd64.zip
+RUN RUN mv terraform /usr/local/bin/
