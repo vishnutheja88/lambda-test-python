@@ -5,6 +5,7 @@ RUN apt-get update -y && apt-get install build-essential libssl-dev libffi-dev p
 
 # install awscli
 RUN apt-get install -y curl
+RUN apt-get installl -y unzip
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 RUN unzip awscliv2.zip
 RUN ./aws/install
